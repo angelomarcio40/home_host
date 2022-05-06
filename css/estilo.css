@@ -1,14 +1,11 @@
 /* general */
-body,
-textarea {
+body, textarea {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     color: #333;
 }
 
@@ -120,7 +117,7 @@ nav {
 }
 
 .fa-rocket {
-    color: darkorange;
+    color: darkorang;
 }
 
 .fa-comments {
@@ -144,7 +141,7 @@ nav {
     margin-top: 0;
 }
 
-.praincing-container p {
+.pricing-container p {
     font-size: 20px;
 }
 
@@ -229,7 +226,7 @@ nav {
     margin-bottom: 15px;
 }
 
-.searchdomain-container- p {
+.searchdomain-container p {
     color: #D5D5D5;
     font-size: 24px;
     margin-bottom: 25px;
@@ -248,4 +245,115 @@ nav {
     width: 60%;
     padding: 20px;
     font-size: 20px;
+}
+
+.searchdomain-container imput[type=submit] {
+    background-color: #2cc76a;
+    padding: 15px 30px;
+    color: #FFF;
+    font-size: 24px;
+}
+
+/* contato */
+.contact-container {
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+}
+
+.contact-container p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contact input, .contact-container textearea {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px soli #CCC;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0 10px 20px;
+}
+
+.contact-container textarea {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 468px;
+    height: 150px;
+}
+
+.contact-container input[type=submit] {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    background-color: #2cc76a;
+    color: #FFF;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+/* Final do Desktop */
+
+/* Inicio mobile */
+@media screen and (max-width: 1100px) {
+    .plans-continer {
+        width: 95%;
+    }
+
+    .plan {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .plans-container, .specialidaes-container ul {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbr-items li {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .plan {
+        max-width: 100%;
+    }
+
+    .search-container {
+        padding: 3em 2em;
+    }
+
+    .container .searchdomain-container input {
+        width: 100%;
+        /* Impede que o padding adicione tamanho ao elemento ouseja, o valor padding, será descontado do tamanho original do elemento */
+        box-sizing: border-box;
+    }
+
+    .contact-container input, .contact-container textarea {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
 }
