@@ -117,7 +117,7 @@ nav {
 }
 
 .fa-rocket {
-    color: darkorang;
+    color: #fdb705;
 }
 
 .fa-comments {
@@ -345,7 +345,7 @@ footer {
 
     .container .searchdomain-container input {
         width: 100%;
-        /* Impede que o padding adicione tamanho ao elemento ouseja, o valor padding, será descontado do tamanho original do elemento */
+        /* Impede que o padding adicione tamanho ao elemento ou seja, o valor padding, será descontado do tamanho original do elemento */
         box-sizing: border-box;
     }
 
